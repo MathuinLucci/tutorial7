@@ -7,8 +7,8 @@
       Tutorial Case
 
       Red Ball Pizza Survey Form
-      Author: 
-      Date:   
+      Author: Matt Parisano
+      Date:   01/21/2025
 
       Filename:   rb_survey.html
 
@@ -17,15 +17,15 @@
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>Red Ball Survey</title>
-   <link href="rb_reset.css" rel="stylesheet" />
-   <link href="rb_styles.css" rel="stylesheet" />
-
+   <link href="./css/rb_reset.css" rel="stylesheet" />
+   <link href="./css/rb_styles.css" rel="stylesheet" />
+   <script src="./js/rb_formsubmit.js"></script>
 </head>
 
 <body>
    <header>
-      <img src="rb_logo.png" alt="Red Ball Pizza" id="logoimg" />
-      <nav> <a id="navicon" href="#"><img src="rb_navicon.png" alt="" /></a>
+      <img src="./img/rb_logo.png" alt="Red Ball Pizza" id="logoimg" />
+      <nav> <a id="navicon" href="#"><img src="./img/rb_navicon.png" alt="" /></a>
          <ul>
             <li><a href="#">home</a></li>
             <li><a href="#">menu</a></li>
@@ -51,6 +51,15 @@
          Pizza will not share your contact information with third 
          parties, <em>ever</em>. </p>
       <p>Required values are marked by an asterisk (*)</p>
+
+      <form id="survey" action="http://www.example.com/redball/survey" method="post">
+         <fieldset id="custInfo">
+         </fieldset>
+
+         <fieldset id="expInfo">
+         </fieldset>
+      
+      </form>
 
      
    </section>
