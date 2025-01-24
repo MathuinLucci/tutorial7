@@ -59,7 +59,7 @@
          
             <div class="formRow">
                <label for="name">Name*:</label>
-               <input name="custName" id="name" type="text" placeholder="First and last name"/>
+               <input name="custName" id="name" type="text" placeholder="First and last name" required/>
                <br><br> <!--Added double line breaks to all of the text boxes to make them look a little bigger so the text doesn't look like sardines in a can-->
             </div>
             
@@ -83,19 +83,19 @@
             
             <div class="formRow">
                <label for="zip">Postal Code:</label>
-               <input name="custZip" id="zip" type="text" placeholder="nnnnn(-nnnn)"/>
+               <input name="custZip" id="zip" type="text" placeholder="nnnnn(-nnnn)" pattern="^\d{5}(-\d{4})?$"/>
                <br><br>
             </div>
             
             <div class="formRow">
                <label for="phone">Phone Number:</label>
-               <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"/>
+               <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" /> <!--This doesn't seem to work. I've checked for typos and nothing is wrong. It doesn't even work when I copy the text from the accompanying txt file-->
                <br><br>
             </div>
             
             <div class="formRow">
                <label for="mail">E-mail*:</label>
-               <input name="custEmail" id="mail" type="email" placeholder="yourEmail@website.com" />
+               <input name="custEmail" id="mail" type="email" placeholder="yourEmail@website.com" required/>
                <br><br>
             </div>
 
